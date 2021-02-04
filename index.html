@@ -313,7 +313,7 @@
 
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19294539b50&gt;
 </code></pre>
-<p><img src="/img/output_4_1.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_4_1.svg" alt="svg"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_prop</span>(<span class="params">group</span>):</span></span><br><span class="line">    group[<span class="string">&#x27;prop&#x27;</span>] = group.births / group.births.<span class="built_in">sum</span>()</span><br><span class="line">    <span class="keyword">return</span> group</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">names = names.groupby([<span class="string">&#x27;year&#x27;</span>,<span class="string">&#x27;gender&#x27;</span>]).apply(add_prop)</span><br><span class="line">names</span><br></pre></td></tr></table></figure>
