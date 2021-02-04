@@ -1421,7 +1421,7 @@ memory usage: 32.7 KB
        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x000001929A4DE820&gt;],
       dtype=object)
 </code></pre>
-<p><img src="output_18_1.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_18_1.svg" alt="svg"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">table = top100.pivot_table(<span class="string">&#x27;prop&#x27;</span>, index = <span class="string">&#x27;year&#x27;</span>,columns=<span class="string">&#x27;gender&#x27;</span>,aggfunc=<span class="built_in">sum</span>)</span><br><span class="line">table</span><br></pre></td></tr></table></figure>
 
 
@@ -1538,7 +1538,7 @@ memory usage: 32.7 KB
 
 &lt;Figure size 432x288 with 0 Axes&gt;
 </code></pre>
-<p><img src="output_20_2.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_20_2.svg" alt="svg"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df = boys[boys.year == <span class="number">2010</span>]</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
 
 
@@ -1730,7 +1730,7 @@ Name: prop, dtype: float64
 
 &lt;Figure size 432x288 with 0 Axes&gt;
 </code></pre>
-<p><img src="output_26_2.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_26_2.svg" alt="svg"></p>
 <p>마지막 글자의 변화</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">get_last_letter= <span class="keyword">lambda</span> x: x[-<span class="number">1</span>]</span><br><span class="line">last_letters= names.name.<span class="built_in">map</span>(get_last_letter)</span><br><span class="line">last_letters.name= <span class="string">&#x27;last_letter&#x27;</span></span><br><span class="line"></span><br><span class="line">table = names.pivot_table(<span class="string">&#x27;births&#x27;</span>, index=last_letters, columns=[<span class="string">&#x27;gender&#x27;</span>, <span class="string">&#x27;year&#x27;</span>], aggfunc=<span class="built_in">sum</span>)</span><br></pre></td></tr></table></figure>
 
@@ -1999,7 +1999,7 @@ Name: prop, dtype: float64
 
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1929a6d2c10&gt;
 </code></pre>
-<p><img src="output_31_1.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_31_1.svg" alt="svg"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">letter_prop= table / table.<span class="built_in">sum</span>()</span><br><span class="line">dny_ts= letter_prop.loc[[<span class="string">&#x27;우&#x27;</span>,<span class="string">&#x27;준&#x27;</span>, <span class="string">&#x27;현&#x27;</span>], <span class="string">&#x27;M&#x27;</span>].T </span><br><span class="line">dny_ts.head()</span><br></pre></td></tr></table></figure>
 
 
@@ -2083,7 +2083,7 @@ Name: prop, dtype: float64
 
 &lt;Figure size 432x288 with 0 Axes&gt;
 </code></pre>
-<p><img src="output_33_2.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_33_2.svg" alt="svg"></p>
 <p>남자이름&gt;여자이름<br>공통부분: 진 </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">all_names = pd.Series(top100.name.unique())</span><br><span class="line">jin_like = all_names[all_names.<span class="built_in">str</span>.lower().<span class="built_in">str</span>.contains(<span class="string">&#x27;진&#x27;</span>)]</span><br><span class="line">jin_like</span><br></pre></td></tr></table></figure>
 
@@ -2190,7 +2190,7 @@ Name: births, dtype: int64
 
 &lt;Figure size 432x288 with 0 Axes&gt;
 </code></pre>
-<p><img src="output_38_2.svg" alt="svg"></p>
+<p><img src="/img/200915_2/output_38_2.svg" alt="svg"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
       
     </div>
